@@ -2,7 +2,7 @@
   {
     "title": "Kavita",
     "name": "kavita",
-    "image": "https://wiki.kavitareader.com/user/themes/learn2-git-sync/images/kavita-book-cropped.png",
+    "image": "kizaing/kavita:latest",
     "description": "eBook. Comic, and Manga reader with web support and odps hosting",
     "categories": [],
     "platform": "linux",
