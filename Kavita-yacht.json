@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Kavita",
+    "name": "kavita",
+    "image": "https://wiki.kavitareader.com/user/themes/learn2-git-sync/images/kavita-book-cropped.png",
+    "description": "eBook. Comic, and Manga reader with web support and odps hosting",
+    "categories": [],
+    "platform": "linux",
+    "note": "",
+    "restart_policy": "on-failure",
+    "ports": [
+      {
+        "WebUI": "5000:5000/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/kavita/config",
+        "bind": "!config"
+      },
+      {
+        "container": "/manga",
+        "bind": "!manga"
+      },
+      {
+        "container": "/comics",
+        "bind": "!comics"
+      },
+      {
+        "container": "/books",
+        "bind": "!books"
+      }
+    ],
+    "env": [
+      {
+        "name": "TZ",
+        "default": "TZ=America/Chicago",
+        "description": "Timezone",
+        "label": "Time Zone"
+      }
+    ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": []
+  }
+]
